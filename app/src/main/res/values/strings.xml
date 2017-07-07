@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Chavel</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_sign_up_portal">SignUpPortal</string>
+    <string name="title_activity_phone_signup">PhoneSignup</string>
+    <string name="title_activity_email_sigup">EmailSigup</string>
+    <string name="title_activity_photo_signup">PhotoSignup</string>
+    <string name="title_activity_nickname_signup">NicknameSignup</string>
+    <string name="title_activity_find_fbsignup">FindFBSignup</string>
+    <string name="title_activity_find_contacts_signup">FindContactsSignup</string>
+    <string name="title_activity_home">HomeActivity</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="title_activity_static">StaticActivity</string>
+    <string name="facebook_app_id">1762232204036007</string>
+    <string-array name="route_activity">
+        <item>Travel</item>
+        <item>Trip</item>
+        <item>Shopping</item>
+        <item>Advanture</item>
+    </string-array>
+    <string-array name="route_travel_method">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+    </string-array>
+</resources>

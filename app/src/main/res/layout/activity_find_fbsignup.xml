@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:background="#0081b3"
+    android:paddingBottom="0dp"
+    tools:context="com.chavel.chavel.Register.FindFBSignup">
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:background="@null"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:padding="20dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/back_ico"
+        />
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="25dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/HeadIcon"
+        android:src="@drawable/signup_findfriends"
+        android:layout_below="@+id/btnBack"
+        />
+    <TextView
+        android:id="@+id/lblHeadText"
+        android:layout_below="@+id/HeadIcon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:textColor="#ffffff"
+        android:text="Find Facebook Friends"
+        android:gravity="center_horizontal|center_vertical"
+        />
+    <TextView
+        android:id="@+id/lblIntro"
+        android:layout_below="@+id/lblHeadText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:textColor="#ffffff"
+        android:text="You choose which friend to follow.We'll never post to Facebook without your permission."
+        android:gravity="center_horizontal|center_vertical"
+        />
+    <ImageButton
+        android:gravity="center"
+        android:id="@+id/btnNext"
+        android:layout_below="@+id/lblIntro"
+        android:background="@null"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:scaleType="fitCenter"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/connect_fb" />
+
+    <TextView
+        android:id="@+id/lblSignupbottom"
+        android:layout_alignParentBottom="true"
+        android:background="@null"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="#ffffff"
+        android:text="Skip"
+        android:gravity="center_horizontal|center_vertical"
+        />
+
+
+</RelativeLayout>

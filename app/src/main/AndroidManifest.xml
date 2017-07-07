@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.chavel.chavel">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/appicon_1"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDRXStfTm2RZw-ynblHZ8Y_P0Lsex9cigA" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            tools:replace="android:theme" />
+        <activity
+            android:name=".Register.SignUpPortal"
+            android:label="@string/title_activity_sign_up_portal"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Register.PhoneSignup"
+            android:label="@string/title_activity_phone_signup"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".Register.EmailSigup"
+            android:label="@string/title_activity_email_sigup"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".Register.PhotoSignup"
+            android:label="@string/title_activity_photo_signup" />
+        <activity
+            android:name=".Register.NicknameSignup"
+            android:label="@string/title_activity_nickname_signup" />
+        <activity
+            android:name=".Register.FindFBSignup"
+            android:label="@string/title_activity_find_fbsignup" />
+        <activity
+            android:name=".Register.FindContactsSignup"
+            android:label="@string/title_activity_find_contacts_signup" />
+        <activity
+            android:name=".Home.HomeActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_home"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".StaticActivity"
+            android:label="@string/title_activity_static" />
+        <activity
+            android:name=".Home.DetailModalActivity"
+            android:noHistory="true"
+            android:theme="@style/Theme_Dialog" />
+        <activity
+            android:name=".PrivacyActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Register.ForgotPassword"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            ></activity>
+    </application>
+
+</manifest>

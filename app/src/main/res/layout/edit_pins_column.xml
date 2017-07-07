@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:weightSum="1"
+        android:orientation="horizontal"
+
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".1"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginRight="10dp"
+                android:paddingLeft="10dp"
+                android:layout_height="30dp"
+                android:adjustViewBounds="true"
+                android:layout_gravity="top"
+                android:scaleType="fitEnd"
+                android:id="@+id/ColMarker"
+                android:src="@drawable/ic_marker"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".6"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/ColLocation"
+                android:text="Column 1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="10dp"
+                android:gravity="left|top"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="#0fa9de"
+                />
+            <TextView
+                android:id="@+id/ColLocationDetail"
+                android:text="Column 1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:gravity="left|top"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <Button
+                    android:id="@+id/btnEditPins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:background="@drawable/btn_border_radius_blue"
+                    android:text="Edit Pins"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    />
+                <Button
+                    android:id="@+id/btnDeletePins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/btn_border_radius_red"
+                    android:text="Delete Pins"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".3"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:padding="5dp"
+                android:id="@+id/ColPic"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

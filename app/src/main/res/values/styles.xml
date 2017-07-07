@@ -1,0 +1,39 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:textColorHint">#95d0e6</item>
+    </style>
+    <style name="TabWidgetTheme" parent="AppTheme">
+        <item name="colorPrimary">#51b7dc</item>
+        <item name="colorAccent">#51b7dc</item>
+        <!--<item name="textColorHighlight">#51b7dc</item>-->
+        <!--<item name="android:textPrimaryColor">#878787</item>-->
+        <!--<item name="android:textSecondaryColor">#51b7dc</item>-->
+    </style>
+    <style name="Theme.AppCompat.Light.NoActionBar.FullScreen" parent="@style/Theme.AppCompat.Light">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="Theme_Dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name = "android:windowContentOverlay" >@null</item >
+        <item name = "android:colorBackgroundCacheHint" >@null</item >
+        <item name = "android:backgroundDimEnabled">true</item>
+        <item name = "android:windowBackground" >@android:color/transparent</item >
+    </style>
+    <style name="txtLink">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="bgWhite">
+        <item name="android:background">#fff</item>
+    </style>
+    <style name="mySpinnerItemStyle" parent="Base.Widget.AppCompat.Spinner">
+        <item name="android:textColor">#fff</item>
+    </style>
+</resources>
